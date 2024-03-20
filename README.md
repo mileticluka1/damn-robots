@@ -11,11 +11,11 @@ net-http
 Point with this program was to be proof of concept so I made it's usage very simple:<br>
 `ruby main.rb https://example.com/` in case of scanning the index page. Important part is `/` at the ending.<br>
 `ruby main.rb https://example.com/viewer.php?fileview=` for path traversal through the file viewers. Link must end with `=`
-## Arguments
+### Arguments
 With argument `--wordlist` you specify text file that contains wordlist with custom payloads.<br>
 With argument `--skip-default-payloads` you skip built-in payloads and go straight to wordlist running.
 <br>
-Incorrect usage:<br>
+### Incorrect usage:<br>
 ```
 ruby main.rb https://example.com
 ruby main.rb https://example.com/index.html
